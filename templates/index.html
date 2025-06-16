@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Tracker – Sialkot</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🌳 Green Tracker – Sialkot</h1>
+
+    <!-- Tree Form -->
+    <form id="treeForm">
+      <label for="treeName">Tree Name</label>
+      <input type="text" id="treeName" placeholder="e.g. Neem" required>
+
+      <label for="planter">Planted By</label>
+      <input type="text" id="planter" placeholder="e.g. Green NGO" required>
+
+      <label for="location">Location</label>
+      <input type="text" id="location" placeholder="e.g. Paris Road, Sialkot" required>
+
+      <label for="datePlanted">Date Planted</label>
+      <input type="date" id="datePlanted" required>
+
+      <label for="status">Status</label>
+      <select id="status">
+        <option value="Growing">Growing</option>
+        <option value="Healthy">Healthy</option>
+        <option value="Cut">Cut</option>
+        <option value="Dead">Dead</option>
+      </select>
+
+      <button type="submit">➕ Add Tree</button>
+    </form>
+
+    <!-- Tree Table -->
+    <h2>📋 Planted Trees</h2>
+    <table id="treeTable">
+      <thead>
+        <tr>
+          <th>Tree</th>
+          <th>Planter</th>
+          <th>Location</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- JS will insert rows here -->
+      </tbody>
+    </table>
+
+    <!-- Google Map -->
+    <h2>🗺️ Plantation Area</h2>
+    <iframe
+      src="https://www.google.com/maps?q=jinnah+stadium+sialkot&output=embed"
+      width="100%"
+      height="300"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
