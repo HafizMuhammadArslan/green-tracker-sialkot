@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Green Tracker – Sialkot</title>
-  <link rel="stylesheet" href="/static/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
@@ -14,21 +14,21 @@
     <!-- Tree Form -->
     <form id="treeForm">
       <label for="treeName">Tree Name</label>
-      <input type="text" id="treeName" placeholder="e.g. Neem" required>
+      <input type="text" id="treeName" required />
 
       <label for="planter">Planted By</label>
-      <input type="text" id="planter" placeholder="e.g. Green NGO" required>
+      <input type="text" id="planter" required />
 
       <label for="location">Location</label>
-      <input type="text" id="location" placeholder="e.g. Paris Road, Sialkot" required>
+      <input type="text" id="location" required />
 
       <label for="datePlanted">Date Planted</label>
-      <input type="date" id="datePlanted" required>
+      <input type="date" id="datePlanted" required />
 
       <label for="status">Status</label>
       <select id="status">
-        <option value="Growing">Growing</option>
         <option value="Healthy">Healthy</option>
+        <option value="Growing">Growing</option>
         <option value="Cut">Cut</option>
         <option value="Dead">Dead</option>
       </select>
@@ -50,7 +50,7 @@
         </tr>
       </thead>
       <tbody>
-        <!-- JS will insert rows here -->
+        <!-- JavaScript will fill this -->
       </tbody>
     </table>
 
@@ -58,13 +58,11 @@
     <h2>🗺️ Plantation Area</h2>
     <iframe
       src="https://www.google.com/maps?q=jinnah+stadium+sialkot&output=embed"
-      width="100%"
-      height="300"
-      allowfullscreen=""
-      loading="lazy"
-    ></iframe>
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
   </div>
 
-  <script src="/static/script.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
 </body>
 </html>
