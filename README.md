@@ -1,6 +1,6 @@
 # 🌳 Green Tracker – Tree Planting System for Sialkot
 
-This is a beginner-friendly web application designed to help a small local NGO in Sialkot, Pakistan track their tree plantation activities.
+This is a beginner-friendly web application designed to help a small local treesave company   in Sialkot, Pakistan track their tree plantation activities.
 
 ## ✅ Features
 
@@ -18,7 +18,7 @@ This is a beginner-friendly web application designed to help a small local NGO i
 - **Version Control:** Git + GitHub
 - **Map Integration:** Google Maps Embed
 
-## 📍 NGO Location
+## 📍 treesave company Location
 
 The tree planting starts around **Jinnah Stadium, Sialkot**.
 
