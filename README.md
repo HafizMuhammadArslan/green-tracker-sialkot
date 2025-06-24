@@ -2,7 +2,7 @@
 
 This is a beginner-friendly web application designed to help a small local treesave company   in Sialkot, Pakistan track their tree plantation activities.
 
-## ✅ Features
+# Features
 
 - Add new tree planting records
 - View all planted trees in a list
@@ -10,7 +10,7 @@ This is a beginner-friendly web application designed to help a small local trees
 - Delete entries
 - Google Map embedded to show the planting area
 
-## 🔧 Tech Stack
+## Tech Stack
 
 - **Backend:** Python (Flask)
 - **Frontend:** HTML, JavaScript, Bootstrap
